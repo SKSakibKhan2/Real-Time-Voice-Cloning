@@ -1,0 +1,7 @@
+sudo apt update && sudo apt install python3.10 python3.10-venv -y
+python3.10 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+python demo_web.py
